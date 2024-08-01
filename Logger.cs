@@ -1,17 +1,4 @@
-﻿using System;
-using System.Configuration;
-using System.Diagnostics;
-using System.IO;
-using System.IO.Compression;
-using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Xml;
 
-namespace InstrumentC_Processor
-{
-    internal class Logger
-    {
         #region AVIGAIL 01/08/24
 
         private static ThreadLocal<string> logPath = new ThreadLocal<string>(() => string.Empty);
@@ -146,7 +133,7 @@ namespace InstrumentC_Processor
         }
 
         #endregion
-    }
+    
 
     public static class StringExtensionMethods
     {
@@ -227,4 +214,3 @@ namespace InstrumentC_Processor
             return new string(chars);
         }
     }
-}
