@@ -135,7 +135,7 @@ namespace InstrumentC_Processor
                 using (StreamWriter sw = new StreamWriter(logPath.Value, true))
                 {
                     sw.WriteLine(CallingMethodDetails()); // Log method details
-                    sw.WriteLine($"{strLog}\n");
+                    sw.WriteLine($"{strLog}{Environment.NewLine}");
                 }
             }
             catch (Exception ex)
